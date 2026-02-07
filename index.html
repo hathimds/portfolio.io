@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hathim Manaf | Portfolio</title>
+    <title>Hathim Manaf | Data Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
@@ -11,75 +11,114 @@
 <body>
 
     <nav>
-        <div class="logo">HATHIM<span>.DS</span></div>
+        <div class="logo">HATHIM<span>.MANAF</span></div>
         <div class="nav-links">
-            <a href="#projects">Work</a>
+            <a href="#projects">Portfolio</a>
             <a href="#experience">Experience</a>
-            <a href="https://github.com/hathimds" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/hathim-manaf" target="_blank" class="nav-cta">Hire Me</a>
+            <a href="https://github.com/hathimds" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/hathim-manaf" target="_blank" class="nav-cta">LinkedIn</a>
         </div>
     </nav>
 
     <header id="hero">
-        <div class="hero-text">
-            <div class="status-pill">● Available for Roles</div>
-            <h1>Solving Business Problems with <span>Data Intelligence.</span></h1>
-            <p>Data Analyst with a 7.8 CGPA from <strong>IIT Madras</strong>. I specialize in SQL architecture, interactive BI storytelling, and deploying ML models to production[cite: 11, 12].</p>
+        <div class="hero-container">
+            <div class="hero-image">
+                <img src="profile_picture.jpeg" alt="Hathim Manaf">
+            </div>
+            <div class="hero-text">
+                <span class="badge">IIT Madras • Data Science Specialist</span>
+                <h1>Turning Complex Data into <span>Business Intelligence.</span></h1>
+                <p>Data Analyst with a 7.8 CGPA from <strong>IIT Madras</strong>[cite: 30, 43]. Specialized in SQL Engineering, Interactive Dashboards, and End-to-End Machine Learning[cite: 11, 12].</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn-main">View 6 Case Studies</a>
+                    <a href="Data_Analysis_Resume (2).pdf" class="btn-sub" target="_blank">Download CV</a>
+                </div>
+            </div>
         </div>
     </header>
 
     <section id="projects">
-        <div class="section-header">
-            <h2>Selected Works</h2>
-            <p>A mix of Business Intelligence, SQL Engineering, and Machine Learning.</p>
+        <div class="section-title">
+            <h2>Technical Portfolio</h2>
+            <div class="underline"></div>
         </div>
 
-        <div class="project-grid">
+        <div class="portfolio-grid">
             
-            <div class="project-card">
-                <div class="card-image"><img src="Health_Insurance_Cost_Prediction.png" alt="ML Project"></div>
-                <div class="card-content">
+            <div class="case-card ml">
+                <div class="case-img"><img src="Health_Insurance_Cost_Prediction.png" alt="ML Project"></div>
+                <div class="case-body">
                     <span class="tag">Machine Learning</span>
                     <h3>Health Insurance Predictor</h3>
-                    <p>XGBoost regression model ($R^2=0.84$) deployed on Render for real-time cost estimation[cite: 27, 28].</p>
-                    <div class="card-footer">
-                        <a href="YOUR_RENDER_URL" class="live-link">Live App <i class="fas fa-external-link-alt"></i></a>
+                    <p>Built an XGBoost regression model with an R² of 0.84 to modernize premium calculations[cite: 28].</p>
+                    <div class="case-stats">
+                        <span><i class="fas fa-microchip"></i> XGBoost</span>
+                        <span><i class="fas fa-rocket"></i> Render</span>
                     </div>
                 </div>
             </div>
 
-            <div class="project-card">
-                <div class="card-image"><img src="AtliQ_Hospitality_Analytics.png" alt="Atliq"></div>
-                <div class="card-content">
+            <div class="case-card bi">
+                <div class="case-img"><img src="AtliQ_Hospitality_Analytics.png" alt="Atliq Dashboard"></div>
+                <div class="case-body">
                     <span class="tag">Power BI</span>
-                    <h3>AtliQ Hospitality Analytics</h3>
-                    <p>Identified revenue leakages and occupancy trends across luxury vs business categories[cite: 21, 22].</p>
-                    <div class="card-footer">
-                        <a href="https://github.com/hathimds" class="live-link">GitHub <i class="fab fa-github"></i></a>
+                    <h3>AtliQ Hospitality Analysis</h3>
+                    <p>Analyzed ₹1.69B revenue base to identify 29.9% leakage and occupancy upsides[cite: 22].</p>
+                    <div class="case-stats">
+                        <span><i class="fas fa-hotel"></i> Revenue</span>
+                        <span><i class="fas fa-chart-pie"></i> DAX</span>
                     </div>
                 </div>
             </div>
 
-            <div class="project-card">
-                <div class="card-image"><img src="Retail_Sales_Analytics.png" alt="SQL"></div>
-                <div class="card-content">
-                    <span class="tag">SQL / Engineering</span>
-                    <h3>Retail Sales SQL Engine</h3>
-                    <p>Designed a star-schema model. Used CTEs and Window Functions to analyze seasonal performance[cite: 25, 26].</p>
-                    <div class="card-footer">
-                        <a href="https://github.com/hathimds" class="live-link">View Logic <i class="fas fa-code"></i></a>
+            <div class="case-card sql">
+                <div class="case-img"><img src="Retail_Sales_Analytics.jpg" alt="SQL Project"></div>
+                <div class="case-body">
+                    <span class="tag">Data Engineering</span>
+                    <h3>Retail Sales Engine (SQL)</h3>
+                    <p>Designed a star-schema model with CTEs and Window Functions for seasonal trend discovery[cite: 25, 26].</p>
+                    <div class="case-stats">
+                        <span><i class="fas fa-database"></i> MySQL</span>
+                        <span><i class="fas fa-project-diagram"></i> Schema</span>
                     </div>
                 </div>
             </div>
 
-            <div class="project-card">
-                <div class="card-image"><img src="HR_Workforce_Analytics.png" alt="HR"></div>
-                <div class="card-content">
-                    <span class="tag">Tableau</span>
-                    <h3>HR Workforce Analytics</h3>
-                    <p>Engineered a dataset of 8,950+ records to visualize attrition and compensation trends[cite: 23, 24].</p>
-                    <div class="card-footer">
-                        <a href="https://github.com/hathimds" class="live-link">Case Study <i class="fas fa-chart-bar"></i></a>
+            <div class="case-card bi">
+                <div class="case-img"><img src="HR_Workforce_Analytics.png" alt="HR Dashboard"></div>
+                <div class="case-body">
+                    <span class="tag">People Analytics</span>
+                    <h3>HR Workforce Intelligence</h3>
+                    <p>Visualized 8,950+ employee records to identify ~11% attrition and compensation patterns[cite: 24].</p>
+                    <div class="case-stats">
+                        <span><i class="fas fa-users-cog"></i> Tableau</span>
+                        <span><i class="fas fa-brain"></i> Python</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case-card bi">
+                <div class="case-img"><img src="Blinkit_Sales_Analytics.png" alt="Blinkit Dashboard"></div>
+                <div class="case-body">
+                    <span class="tag">Business Intelligence</span>
+                    <h3>Blinkit Performance Insights</h3>
+                    <p>Detailed analysis of $1.2M revenue across outlet types, sizes, and location tiers.</p>
+                    <div class="case-stats">
+                        <span><i class="fas fa-shopping-basket"></i> Sales</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Tiers</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case-card bi">
+                <div class="case-img"><img src="Sales_And_Customers_Analytics.png" alt="Customer Analytics"></div>
+                <div class="case-body">
+                    <span class="tag">Customer Analytics</span>
+                    <h3>Retail Growth Analytics</h3>
+                    <p>Visualizing $733K total sales with a 12.7% profit margin and 20.4% YoY growth.</p>
+                    <div class="case-stats">
+                        <span><i class="fas fa-chart-line"></i> YoY Growth</span>
+                        <span><i class="fas fa-wallet"></i> Margin</span>
                     </div>
                 </div>
             </div>
@@ -88,36 +127,36 @@
     </section>
 
     <section id="experience">
-        <div class="exp-container">
-            <div class="exp-box">
+        <div class="exp-grid">
+            <div class="exp-col">
                 <h3>Work Experience</h3>
-                <div class="exp-item">
-                    <h4>Data Science Intern | Edure </h4>
-                    <p>July 2024 - Jan 2025 [cite: 16]</p>
+                <div class="exp-card">
+                    <h4>Data Science Intern | Edure</h4>
+                    <p class="date">July 2024 - Jan 2025 [cite: 16]</p>
                     <ul>
-                        <li>Cleaned large structured datasets using SQL and Python[cite: 17].</li>
-                        <li>Built Power BI dashboards for KPI tracking and management review[cite: 18].</li>
-                        <li>Performed EDA to identify trends and supported predictive modeling[cite: 19].</li>
+                        <li>Cleaned large structured datasets for KPI reporting[cite: 17, 18].</li>
+                        <li>Built Power BI dashboards for management review[cite: 18].</li>
+                        <li>Performed EDA to identify business trends and anomalies[cite: 19].</li>
                     </ul>
                 </div>
             </div>
-
-            <div class="exp-box">
-                <h3>Education & Certs</h3>
-                <div class="exp-item">
-                    <h4>BSc in Data Science | IIT Madras [cite: 29, 30]</h4>
-                    <p>Expected 2026 | CGPA: 7.8/10 [cite: 43]</p>
+            <div class="exp-col">
+                <h3>Academic & Certs</h3>
+                <div class="exp-card">
+                    <h4>BSc Data Science | IIT Madras</h4>
+                    <p class="date">Expected 2026 [cite: 43]</p>
+                    <p>Current CGPA: 7.8 / 10.0 [cite: 43]</p>
                 </div>
-                <div class="exp-item">
-                    <h4>Data Analytics Job Simulation | Deloitte </h4>
-                    <p>2026</p>
+                <div class="exp-card">
+                    <h4>Deloitte Job Simulation</h4>
+                    <p class="date">Data Analytics - 2026 [cite: 36]</p>
                 </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>© 2026 Hathim Manaf. Built for Data Impact.</p>
+        <p>© 2026 Hathim Manaf | Built for Professional Impact</p>
     </footer>
 
 </body>
