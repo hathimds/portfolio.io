@@ -3,111 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hathim Manaf | Data Analyst Portfolio</title>
+    <title>Hathim Manaf | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="background-animation"></div>
 
     <nav>
-        <div class="logo">Hathim<span>Manaf</span></div>
+        <div class="logo">HATHIM<span>.DS</span></div>
         <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#projects">Portfolio</a>
+            <a href="#projects">Work</a>
             <a href="#experience">Experience</a>
-            <a href="https://linkedin.com/in/hathim-manaf" target="_blank" class="nav-btn">LinkedIn</a>
+            <a href="https://github.com/hathimds" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/hathim-manaf" target="_blank" class="nav-cta">Hire Me</a>
         </div>
     </nav>
 
     <header id="hero">
-        <div class="hero-content">
-            <span class="badge">IIT Madras • BSc Data Science</span>
-            <h1>Analytics-First <span>Data Professional</span></h1>
-            <p>I transform complex datasets into high-impact business narratives. Specialized in SQL Architecture, Interactive BI, and Deployed ML Solutions.</p>
-            <div class="hero-cta">
-                <a href="#projects" class="btn-primary">View Case Studies</a>
-                <a href="https://github.com/hathimds" class="btn-secondary"><i class="fab fa-github"></i> GitHub</a>
-            </div>
+        <div class="hero-text">
+            <div class="status-pill">● Available for Roles</div>
+            <h1>Solving Business Problems with <span>Data Intelligence.</span></h1>
+            <p>Data Analyst with a 7.8 CGPA from <strong>IIT Madras</strong>. I specialize in SQL architecture, interactive BI storytelling, and deploying ML models to production[cite: 11, 12].</p>
         </div>
     </header>
 
-    <section id="skills">
-        <div class="skill-tag">SQL (CTEs/Window Functions)</div>
-        <div class="skill-tag">Python (Pandas/XGBoost)</div>
-        <div class="skill-tag">Power BI (DAX)</div>
-        <div class="skill-tag">Tableau</div>
-        <div class="skill-tag">Model Deployment (Render)</div>
-    </section>
-
     <section id="projects">
-        <h2 class="section-title">Featured Projects</h2>
+        <div class="section-header">
+            <h2>Selected Works</h2>
+            <p>A mix of Business Intelligence, SQL Engineering, and Machine Learning.</p>
+        </div>
+
         <div class="project-grid">
             
             <div class="project-card">
-                <div class="project-type">Machine Learning</div>
-                <h3>Health Insurance Cost Prediction</h3>
-                <p>Built an XGBoost regression model achieving an R² of 0.84. Deployed as a real-time tool.</p>
-                <div class="tech-stack">Python • XGBoost • Render</div>
-                <div class="card-links">
-                    <a href="YOUR_RENDER_LINK_HERE">Live App</a>
-                    <a href="https://github.com/hathimds">Code</a>
+                <div class="card-image"><img src="Health_Insurance_Cost_Prediction.png" alt="ML Project"></div>
+                <div class="card-content">
+                    <span class="tag">Machine Learning</span>
+                    <h3>Health Insurance Predictor</h3>
+                    <p>XGBoost regression model ($R^2=0.84$) deployed on Render for real-time cost estimation[cite: 27, 28].</p>
+                    <div class="card-footer">
+                        <a href="YOUR_RENDER_URL" class="live-link">Live App <i class="fas fa-external-link-alt"></i></a>
+                    </div>
                 </div>
             </div>
 
             <div class="project-card">
-                <div class="project-type">Business Intelligence</div>
-                <h3>AtliQ Hospitality Analytics</h3>
-                <p>Interactive dashboard for Revenue & Occupancy. Optimized booking platform performance analysis.</p>
-                <div class="tech-stack">Power BI • Power Query • DAX</div>
-                <div class="card-links">
-                    <a href="https://github.com/hathimds">Case Study</a>
+                <div class="card-image"><img src="AtliQ_Hospitality_Analytics.png" alt="Atliq"></div>
+                <div class="card-content">
+                    <span class="tag">Power BI</span>
+                    <h3>AtliQ Hospitality Analytics</h3>
+                    <p>Identified revenue leakages and occupancy trends across luxury vs business categories[cite: 21, 22].</p>
+                    <div class="card-footer">
+                        <a href="https://github.com/hathimds" class="live-link">GitHub <i class="fab fa-github"></i></a>
+                    </div>
                 </div>
             </div>
 
             <div class="project-card">
-                <div class="project-type">Data Engineering</div>
-                <h3>Retail Sales SQL Engine</h3>
-                <p>Engineered a Star-Schema data model using MySQL. Extracted seasonal trends via Window Functions.</p>
-                <div class="tech-stack">MySQL • Star Schema • CTEs</div>
-                <div class="card-links">
-                    <a href="https://github.com/hathimds">View Queries</a>
+                <div class="card-image"><img src="Retail_Sales_Analytics.png" alt="SQL"></div>
+                <div class="card-content">
+                    <span class="tag">SQL / Engineering</span>
+                    <h3>Retail Sales SQL Engine</h3>
+                    <p>Designed a star-schema model. Used CTEs and Window Functions to analyze seasonal performance[cite: 25, 26].</p>
+                    <div class="card-footer">
+                        <a href="https://github.com/hathimds" class="live-link">View Logic <i class="fas fa-code"></i></a>
+                    </div>
                 </div>
             </div>
 
-             <div class="project-card">
-                <div class="project-type">People Analytics</div>
-                <h3>HR Workforce Analysis</h3>
-                <p>Engineered 8,950+ synthetic employee records to analyze attrition and salary parity trends.</p>
-                <div class="tech-stack">Python • Tableau</div>
-                <div class="card-links">
-                    <a href="https://github.com/hathimds">Dashboard</a>
+            <div class="project-card">
+                <div class="card-image"><img src="HR_Workforce_Analytics.png" alt="HR"></div>
+                <div class="card-content">
+                    <span class="tag">Tableau</span>
+                    <h3>HR Workforce Analytics</h3>
+                    <p>Engineered a dataset of 8,950+ records to visualize attrition and compensation trends[cite: 23, 24].</p>
+                    <div class="card-footer">
+                        <a href="https://github.com/hathimds" class="live-link">Case Study <i class="fas fa-chart-bar"></i></a>
+                    </div>
                 </div>
             </div>
+
         </div>
     </section>
 
     <section id="experience">
-        <h2 class="section-title">Professional Journey</h2>
-        <div class="timeline">
-            <div class="time-item">
-                <h4>Data Science Intern | Edure</h4>
-                <p>July 2024 - Jan 2025</p>
-                <ul>
-                    <li>Cleaned large structured datasets for KPI reporting[cite: 17, 18].</li>
-                    <li>Developed predictive models and documented stakeholder insights[cite: 19].</li>
-                </ul>
+        <div class="exp-container">
+            <div class="exp-box">
+                <h3>Work Experience</h3>
+                <div class="exp-item">
+                    <h4>Data Science Intern | Edure </h4>
+                    <p>July 2024 - Jan 2025 [cite: 16]</p>
+                    <ul>
+                        <li>Cleaned large structured datasets using SQL and Python[cite: 17].</li>
+                        <li>Built Power BI dashboards for KPI tracking and management review[cite: 18].</li>
+                        <li>Performed EDA to identify trends and supported predictive modeling[cite: 19].</li>
+                    </ul>
+                </div>
             </div>
-            <div class="time-item">
-                <h4>BSc Data Science | IIT Madras</h4>
-                <p>Expected 2026 | CGPA: 7.8/10</p>
-                <p>Foundation & Diploma levels in Programming & Data Science[cite: 30, 32, 43].</p>
+
+            <div class="exp-box">
+                <h3>Education & Certs</h3>
+                <div class="exp-item">
+                    <h4>BSc in Data Science | IIT Madras [cite: 29, 30]</h4>
+                    <p>Expected 2026 | CGPA: 7.8/10 [cite: 43]</p>
+                </div>
+                <div class="exp-item">
+                    <h4>Data Analytics Job Simulation | Deloitte </h4>
+                    <p>2026</p>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>© 2026 Hathim Manaf | Designed for Data Excellence</p>
+        <p>© 2026 Hathim Manaf. Built for Data Impact.</p>
     </footer>
+
 </body>
 </html>
