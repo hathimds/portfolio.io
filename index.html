@@ -3,48 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hathim Manaf | Data Portfolio</title>
+    <title>Hathim Manaf | Data Analyst Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <div class="background-animation"></div>
+
     <nav>
         <div class="logo">Hathim<span>Manaf</span></div>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="https://linkedin.com/in/hathim-manaf" target="_blank">LinkedIn</a></li>
-        </ul>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#projects">Portfolio</a>
+            <a href="#experience">Experience</a>
+            <a href="https://linkedin.com/in/hathim-manaf" target="_blank" class="nav-btn">LinkedIn</a>
+        </div>
     </nav>
 
-    <header id="about">
-        <h1>Data Analyst & Applied ML Practitioner</h1>
-        <p>BSc Data Science at <strong>IIT Madras</strong> (7.8 CGPA)</p> [cite: 30, 43]
-        <p>I transform raw data into business-ready insights using SQL, BI, and Python.</p> [cite: 6, 7]
+    <header id="hero">
+        <div class="hero-content">
+            <span class="badge">IIT Madras • BSc Data Science</span>
+            <h1>Analytics-First <span>Data Professional</span></h1>
+            <p>I transform complex datasets into high-impact business narratives. Specialized in SQL Architecture, Interactive BI, and Deployed ML Solutions.</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn-primary">View Case Studies</a>
+                <a href="https://github.com/hathimds" class="btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
     </header>
 
+    <section id="skills">
+        <div class="skill-tag">SQL (CTEs/Window Functions)</div>
+        <div class="skill-tag">Python (Pandas/XGBoost)</div>
+        <div class="skill-tag">Power BI (DAX)</div>
+        <div class="skill-tag">Tableau</div>
+        <div class="skill-tag">Model Deployment (Render)</div>
+    </section>
+
     <section id="projects">
-        <h2>Featured Work</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Insurance Cost Prediction</h3>
-                <p>XGBoost Model (R²=0.84) deployed on Render.</p> 
-                <a href="https://github.com/hathimds" class="btn">View Project</a>
-            </div>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="project-grid">
             
-            <div class="card">
-                <h3>AtliQ Hospitality Analytics</h3>
-                <p>Revenue & Occupancy tracking using DAX and Power BI.</p> 
-                <a href="https://github.com/hathimds" class="btn">View Dashboard</a>
+            <div class="project-card">
+                <div class="project-type">Machine Learning</div>
+                <h3>Health Insurance Cost Prediction</h3>
+                <p>Built an XGBoost regression model achieving an R² of 0.84. Deployed as a real-time tool.</p>
+                <div class="tech-stack">Python • XGBoost • Render</div>
+                <div class="card-links">
+                    <a href="YOUR_RENDER_LINK_HERE">Live App</a>
+                    <a href="https://github.com/hathimds">Code</a>
+                </div>
             </div>
 
-            <div class="card">
-                <h3>Retail SQL Analytics</h3>
-                <p>Star-schema modeling & performance analysis using CTEs/Window Functions.</p> 
-                <a href="https://github.com/hathimds" class="btn">View SQL Case Study</a>
+            <div class="project-card">
+                <div class="project-type">Business Intelligence</div>
+                <h3>AtliQ Hospitality Analytics</h3>
+                <p>Interactive dashboard for Revenue & Occupancy. Optimized booking platform performance analysis.</p>
+                <div class="tech-stack">Power BI • Power Query • DAX</div>
+                <div class="card-links">
+                    <a href="https://github.com/hathimds">Case Study</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-type">Data Engineering</div>
+                <h3>Retail Sales SQL Engine</h3>
+                <p>Engineered a Star-Schema data model using MySQL. Extracted seasonal trends via Window Functions.</p>
+                <div class="tech-stack">MySQL • Star Schema • CTEs</div>
+                <div class="card-links">
+                    <a href="https://github.com/hathimds">View Queries</a>
+                </div>
+            </div>
+
+             <div class="project-card">
+                <div class="project-type">People Analytics</div>
+                <h3>HR Workforce Analysis</h3>
+                <p>Engineered 8,950+ synthetic employee records to analyze attrition and salary parity trends.</p>
+                <div class="tech-stack">Python • Tableau</div>
+                <div class="card-links">
+                    <a href="https://github.com/hathimds">Dashboard</a>
+                </div>
             </div>
         </div>
     </section>
+
+    <section id="experience">
+        <h2 class="section-title">Professional Journey</h2>
+        <div class="timeline">
+            <div class="time-item">
+                <h4>Data Science Intern | Edure</h4>
+                <p>July 2024 - Jan 2025</p>
+                <ul>
+                    <li>Cleaned large structured datasets for KPI reporting[cite: 17, 18].</li>
+                    <li>Developed predictive models and documented stakeholder insights[cite: 19].</li>
+                </ul>
+            </div>
+            <div class="time-item">
+                <h4>BSc Data Science | IIT Madras</h4>
+                <p>Expected 2026 | CGPA: 7.8/10</p>
+                <p>Foundation & Diploma levels in Programming & Data Science[cite: 30, 32, 43].</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Hathim Manaf | Designed for Data Excellence</p>
+    </footer>
 </body>
 </html>
