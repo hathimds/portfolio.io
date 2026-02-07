@@ -9,8 +9,24 @@
 * { margin:0; padding:0; box-sizing: border-box; font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
 body { background: var(--bg); color: var(--text); line-height: 1.6; }
 
+/* MARGIN & ALIGNMENT FIX */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
 /* Nav */
-nav { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 10%; position: sticky; top:0; z-index:100; background: rgba(3,3,5,0.9); backdrop-filter: blur(15px); border-bottom: 1px solid #1a1a1c; }
+nav { 
+    padding: 1.5rem 0; 
+    position: sticky; 
+    top:0; 
+    z-index:100; 
+    background: rgba(3,3,5,0.9); 
+    backdrop-filter: blur(15px); 
+    border-bottom: 1px solid #1a1a1c; 
+}
+.nav-flex { display: flex; justify-content: space-between; align-items: center; }
 .logo { font-weight: 800; font-size: 1.2rem; }
 .logo span { color: var(--accent); }
 .nav-links a { color: var(--text); text-decoration: none; margin-left: 2rem; font-size: 0.9rem; font-weight: 600; transition: 0.3s; }
@@ -18,47 +34,48 @@ nav { display: flex; justify-content: space-between; align-items: center; paddin
 .nav-cta { border: 1px solid var(--accent); padding: 0.6rem 1.5rem; border-radius: 4px; color: var(--accent) !important; }
 
 /* Hero */
-#hero { padding: 8rem 10% 5rem; }
+#hero { padding: 8rem 0 5rem; }
 .hero-container { display: flex; align-items: center; gap: 5rem; }
-.hero-image img { width: 320px; height: 320px; object-fit: cover; border-radius: 30px; border: 1px solid #222; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+.hero-image img { width: 320px; height: 320px; object-fit: cover; border-radius: 30px; border: 1px solid #222; }
 .hero-text h1 { font-size: 4rem; line-height: 1.1; margin: 1.5rem 0; font-weight: 800; }
 .hero-text h1 span { color: var(--accent); }
 .badge { color: var(--accent); font-weight: 800; text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; }
 .hero-text p { font-size: 1.2rem; color: var(--muted); max-width: 650px; }
 .hero-btns { margin-top: 3rem; display: flex; gap: 1.5rem; }
-.btn-main { background: var(--accent); color: #000; padding: 1.2rem 2.5rem; text-decoration: none; border-radius: 4px; font-weight: 800; transition: 0.3s; }
+.btn-main { background: var(--accent); color: #000; padding: 1.2rem 2.5rem; text-decoration: none; border-radius: 4px; font-weight: 800; }
 .btn-sub { border: 1px solid #333; color: #fff; padding: 1.2rem 2.5rem; text-decoration: none; border-radius: 4px; font-weight: 600; }
 
-/* Skills Section */
-.skills-visual { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; padding: 2rem 10%; }
-.skill-card { background: var(--card); padding: 3rem 2rem; border-radius: 20px; border: 1px solid #1a1a1c; text-align: center; transition: 0.4s; }
-.skill-card:hover { transform: translateY(-10px); border-color: var(--accent); }
-.skill-icon { font-size: 2.5rem; color: var(--accent); margin-bottom: 1.5rem; }
+/* Section Titles */
+.section-title { margin-bottom: 3rem; }
+.section-title h2 { font-size: 2.5rem; font-weight: 800; }
 
-/* ALIGNMENT FIX FOR PROJECTS */
-.portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 3rem; padding: 2rem 10%; }
+/* Skills */
+.skills-visual { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; padding: 2rem 0; }
+.skill-card { background: var(--card); padding: 3rem 2rem; border-radius: 20px; border: 1px solid #1a1a1c; text-align: center; }
+.skill-img-icon { width: 50px; height: 50px; object-fit: contain; margin-bottom: 1.5rem; }
+
+/* Projects Grid Alignment */
+.portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem; padding: 2rem 0; }
 .case-card { background: var(--card); border-radius: 24px; overflow: hidden; border: 1px solid #1a1a1c; height: 100%; display: flex; flex-direction: column; }
-.case-img { width: 100%; height: 250px; background: #000; overflow: hidden; display: flex; align-items: center; justify-content: center; }
-.case-img img { width: 100%; height: 100%; object-fit: cover; opacity: 0.8; transition: 0.5s; } /* Use object-fit: cover for seamless grid */
-.case-card:hover .case-img img { opacity: 1; transform: scale(1.05); }
-
+.case-img { width: 100%; height: 250px; background: #000; overflow: hidden; }
+.case-img img { width: 100%; height: 100%; object-fit: cover; opacity: 0.8; }
 .case-body { padding: 2.5rem; flex-grow: 1; display: flex; flex-direction: column; }
 .p-tag { color: var(--accent); font-weight: 800; font-size: 0.7rem; text-transform: uppercase; margin-bottom: 0.5rem; }
-.p-link { margin-top: auto; color: #fff; text-decoration: none; font-weight: 800; border-bottom: 2px solid var(--accent); padding-bottom: 2px; align-self: flex-start; }
+.p-link { margin-top: auto; color: #fff; text-decoration: none; font-weight: 800; border-bottom: 2px solid var(--accent); align-self: flex-start; }
 
-/* Certs Section */
-.cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 1.5rem; padding: 2rem 10%; }
+/* Certs Section with Image Logos */
+.cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 1.5rem; padding: 2rem 0; }
 .cert-item { display: flex; align-items: center; background: #0c0c0e; padding: 1.5rem; border-radius: 12px; border: 1px solid #1a1a1c; }
-.cert-icon { font-size: 1.5rem; color: var(--accent); margin-right: 1.5rem; }
+.cert-logo-img { width: 45px; height: 45px; object-fit: contain; margin-right: 1.5rem; background: #fff; padding: 5px; border-radius: 4px; }
 .cert-info h4 { font-size: 0.95rem; margin-bottom: 0.2rem; }
 .cert-info p { font-size: 0.8rem; color: var(--muted); }
 
 /* Connect Section */
-#connect { padding: 10rem 10%; text-align: center; background: #060608; }
-.inline-logo { width: 18px; height: 18px; vertical-align: middle; margin-right: 5px; }
+#connect { padding: 8rem 0; text-align: center; }
+.connect-box { background: #060608; border: 1px solid #1a1a1c; padding: 5rem 2rem; border-radius: 30px; }
+.inline-logo { width: 20px; height: 20px; vertical-align: middle; margin-right: 8px; }
 .social-links { display: flex; justify-content: center; gap: 3rem; margin-top: 3rem; }
-.social-links a { text-decoration: none; color: #fff; font-size: 1.2rem; font-weight: 700; }
-.social-links i { color: var(--accent); }
+.social-links a { text-decoration: none; color: #fff; font-size: 1.1rem; font-weight: 700; }
 
 footer { padding: 4rem; text-align: center; border-top: 1px solid #111; color: var(--muted); font-size: 0.8rem; }
 
