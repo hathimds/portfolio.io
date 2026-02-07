@@ -83,3 +83,8 @@ footer { padding: 4rem; text-align: center; border-top: 1px solid #111; color: v
     .hero-container { flex-direction: column; text-align: center; }
     h1 { font-size: 2.5rem; }
 }
+
+/* This adds spacing above every section heading */
+section {
+    padding-top: 80px; /* Adjust this number (60px to 100px) to get the exact gap you want */
+}
