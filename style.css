@@ -281,3 +281,82 @@ section {
         padding: 3rem 1rem;
     }
 }
+
+/* --- FINAL MOBILE OPTIMIZATION --- */
+
+@media (max-width: 768px) {
+    /* 1. Reset Global Container */
+    .container {
+        padding: 0 1.5rem; /* Prevents text from touching screen edges */
+    }
+
+    /* 2. Fix About Section Alignment */
+    .about-container {
+        padding: 0;
+    }
+
+    .about-box {
+        padding: 1.5rem; /* Reduced from desktop size */
+        text-align: left; /* Ensures professional readability on small screens */
+        border-radius: 15px;
+    }
+
+    .about-box p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        line-height: 1.5;
+    }
+
+    /* 3. Fix Project Image Fitting */
+    .case-card {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    .case-img {
+        height: auto; /* Remove fixed height */
+        aspect-ratio: 16 / 9; /* Keeps the dashboard/photo in a perfect rectangular fit */
+        background: #000;
+    }
+
+    .case-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* CRITICAL: This ensures the WHOLE photo fits without cropping */
+        background-color: #0a0a0c; /* Matches card color if image is small */
+    }
+
+    .case-body {
+        padding: 1.5rem;
+    }
+
+    /* 4. Fix Hero Section */
+    .hero-container {
+        flex-direction: column !important;
+        text-align: center;
+        padding: 3rem 0;
+    }
+
+    .hero-image img {
+        width: 180px; 
+        height: 180px;
+        margin-bottom: 1rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    /* 5. Skills & Certs Single Column */
+    .skills-visual, .cert-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem;
+    }
+
+    .cert-item {
+        padding: 1rem;
+        flex-direction: row; /* Keeps logo next to text unless screen is tiny */
+        align-items: center;
+        text-align: left;
+    }
+}
